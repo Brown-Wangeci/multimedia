@@ -7,31 +7,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Site header and simple portfolio-style navigation -->
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="index.html">Brown Wangeci</a>
-      <div class="nav-links" aria-label="Portfolio links">
-        <a href="#">Work</a>
-        <a href="#">About</a>
-        <a href="#">Interesting Info</a>
-      </div>
-    </nav>
-  </header>
+  <!-- Main assessment content -->
+  <main class="page">
+    <section class="wildlife-section" aria-labelledby="page-title">
+      <p class="eyebrow">Conservation promotional video</p>
+      <h1 id="page-title">Save Our Wildlife</h1>
 
-  <!-- Main assignment content -->
-  <main>
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-intro">
-        <p class="eyebrow">Conservation promotional video</p>
-        <h1 id="page-title">Save Our Wildlife</h1>
-        <p class="lead">
-          A short multimedia campaign encouraging people to protect wildlife,
-          care for natural habitats, and support conservation work.
-        </p>
-      </div>
-
-      <!-- Video feature area -->
+      <!-- Video area -->
       <div class="video-card">
         <video id="wildlifeVideo" class="wildlife-video" controls aria-label="Save Our Wildlife promotional video">
           <source src="wildlife.mp4" type="video/mp4">
@@ -40,43 +22,41 @@
         <p id="videoFallback" class="video-fallback" hidden>
           The video file could not be loaded. Add wildlife.mp4 to the same folder as index.html.
         </p>
+        <p class="video-credit">
+          Video by Earth-Touch PTY (LTD), via
+          <a href="https://archive.org/details/WildlifeVideoMedia" target="_blank" rel="noopener noreferrer">Internet Archive</a>,
+          licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.
+        </p>
       </div>
 
-      <div class="content-grid">
-        <article class="description">
-          <h2>Why Conservation Matters</h2>
-          <p>
-            Wildlife keeps ecosystems balanced, supports food chains, and protects
-            the beauty of our natural world for future generations. When forests,
-            rivers, and grasslands are protected, animals get safer homes and
-            people benefit from cleaner air, healthier land, and stronger communities.
-          </p>
-          <p>
-            Everyone can help by reducing waste, respecting animal habitats,
-            supporting conservation groups, and sharing messages that inspire care
-            for endangered species.
-          </p>
-        </article>
-
-        <aside class="action-panel" aria-label="Video controls">
-          <p class="panel-label">Video action</p>
-          <button
-            id="toggleVideoButton"
-            class="video-button"
-            type="button"
-            aria-controls="wildlifeVideo"
-            aria-expanded="true">
-            Play video
-          </button>
-        </aside>
+      <!-- Short conservation description -->
+      <div class="description">
+        <h2>Why Protecting Wildlife Matters</h2>
+        <p>
+          Wildlife conservation helps protect animals, natural habitats, and the
+          balance of ecosystems that people also depend on. By caring for forests,
+          rivers, grasslands, and endangered species, communities can preserve
+          biodiversity and create a healthier future.
+        </p>
+        <p>
+          Supporting conservation organizations, reducing waste, and respecting
+          animal habitats are simple ways people can help protect wildlife for the
+          next generation.
+        </p>
       </div>
+
+      <!-- Video control button -->
+      <button
+        id="toggleVideoButton"
+        class="video-button"
+        type="button"
+        aria-controls="wildlifeVideo"
+        aria-expanded="true">
+        Play video
+      </button>
     </section>
   </main>
-
-  <!-- Page footer -->
-  <footer class="site-footer">
-    <p>Brown Wangeci &copy; 2026</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>

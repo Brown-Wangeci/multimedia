@@ -43,6 +43,7 @@ toggleButton.addEventListener("click", function () {
 // Show a helpful message if wildlife.mp4 is missing or cannot load.
 video.addEventListener("error", function () {
   videoFallback.hidden = false;
+  updateButtonState();
 });
 
 video.addEventListener("play", updateButtonState);
