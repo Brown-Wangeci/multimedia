@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Our Wildlife</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Site header and simple portfolio-style navigation -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Brown Wangeci</a>
+      <div class="nav-links" aria-label="Portfolio links">
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Interesting Info</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main assignment content -->
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-intro">
+        <p class="eyebrow">Conservation promotional video</p>
+        <h1 id="page-title">Save Our Wildlife</h1>
+        <p class="lead">
+          A short multimedia campaign encouraging people to protect wildlife,
+          care for natural habitats, and support conservation work.
+        </p>
+      </div>
+
+      <!-- Video feature area -->
+      <div class="video-card">
+        <video id="wildlifeVideo" class="wildlife-video" controls aria-label="Save Our Wildlife promotional video">
+          <source src="wildlife.mp4" type="video/mp4">
+          Your browser cannot play this video. Please make sure wildlife.mp4 is in the project folder.
+        </video>
+        <p id="videoFallback" class="video-fallback" hidden>
+          The video file could not be loaded. Add wildlife.mp4 to the same folder as index.html.
+        </p>
+      </div>
+
+      <div class="content-grid">
+        <article class="description">
+          <h2>Why Conservation Matters</h2>
+          <p>
+            Wildlife keeps ecosystems balanced, supports food chains, and protects
+            the beauty of our natural world for future generations. When forests,
+            rivers, and grasslands are protected, animals get safer homes and
+            people benefit from cleaner air, healthier land, and stronger communities.
+          </p>
+          <p>
+            Everyone can help by reducing waste, respecting animal habitats,
+            supporting conservation groups, and sharing messages that inspire care
+            for endangered species.
+          </p>
+        </article>
+
+        <aside class="action-panel" aria-label="Video controls">
+          <p class="panel-label">Video action</p>
+          <button
+            id="toggleVideoButton"
+            class="video-button"
+            type="button"
+            aria-controls="wildlifeVideo"
+            aria-expanded="true">
+            Play video
+          </button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Page footer -->
+  <footer class="site-footer">
+    <p>Brown Wangeci &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
